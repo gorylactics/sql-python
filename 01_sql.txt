@@ -1,0 +1,6 @@
+mysql> SHOW DATABSES;
+mysql> use twitter
+mysql> SELECT first_name , handle , tweet FROM tweets JOIN users ON users.id = tweets.id;
+mysql> INSERT INTO users (first_name , last_name , handle , birthday , created_at) VALUES ('adrian' , 'miranda' , 'gorylactics' , '1984-10-03' , NOW());
+mysql> UPDATE users SET updated_at = NOW() WHERE id = 7;
+mysql> DELETE FROM users WHERE first_name LIKE 'rodrigo';
